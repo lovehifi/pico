@@ -1,5 +1,5 @@
 #!/bin/busybox ash
-#sudo chmod -R 777 /tmp/active.sh && cd /tmp && sudo ./active.sh
+#sudo chmod -R 777 /tmp/pico.sh && cd /tmp && sudo ./pico.sh
 . /etc/init.d/tc-functions
 . /var/www/cgi-bin/pcp-functions
 useBusybox
