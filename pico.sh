@@ -3,16 +3,18 @@
 . /etc/init.d/tc-functions
 . /var/www/cgi-bin/pcp-functions
 useBusybox
-TARGET=`cat /etc/sysconfig/backup_device`
-cd /mnt/$TARGET
+#TARGET=`cat /etc/sysconfig/backup_device`
+#cd /mnt/$TARGET
 #echo pcp-aplayer_render.tcz >>onboot.lst
-cd optional
+#cd optional
 #wget https://raw.githubusercontent.com/sam0402/piCorePlayer-Album_Player/master/pcp-aplayer_render.tcz
-wget https://raw.githubusercontent.com/lovehifi/pico/main/pcp-7.0.0-www.tcz
-wget https://raw.githubusercontent.com/lovehifi/pico/main/slimserver.tcz
 cd /tmp
+wget https://raw.githubusercontent.com/lovehifi/pico/main/pcp-7.0.0-www.tcz
+wget -O - https://raw.githubusercontent.com/lovehifi/pico/main/slimserver.tcz
 wget https://raw.githubusercontent.com/lovehifi/pico/main/MaterialSkin.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/pico/main/pcpm.tar.gz
+mv /mnt/mmcblk0p2/tce/optional/pcp-7.0.0-www.tcz /mnt/mmcblk0p2/tce/optional/pcp-7.0.0-www_o.tcz
+mv /mnt/mmcblk0p2/tce/optional/slimserver.tcz /mnt/mmcblk0p2/tce/optional/slimserver_o.tcz
 tar -zxf MaterialSkin.tar.gz --overwrite -C /
 tar -zxf pcpm.tar.gz --overwrite -C /
 pcp_write_var_to_config USER_COMMAND_3 "/mnt/mmcblk0p2/tce/pcpm.sh"
