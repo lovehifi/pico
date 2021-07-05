@@ -18,6 +18,9 @@ mv /mnt/mmcblk0p2/tce/optional/pcp-7.0.0-www.tcz /mnt/mmcblk0p2/tce/optional/pcp
 mv /mnt/mmcblk0p2/tce/optional/slimserver.tcz /mnt/mmcblk0p2/tce/optional/slimserver_o.tcz
 sudo tar -zxf MaterialSkin.tar.gz --overwrite -C /
 sudo tar -zxf pcpm.tar.gz --overwrite -C /
+#sudo rm /home/tc/aplayer/aplayer
+#sudo rm /home/tc/apmenu/apmenu
+#sudo rm /home/tc/aprenderer/ap2renderer
 sudo tar -zxf ap.tar.gz --overwrite -C /
 mv /tmp/pcp-7.0.0-www.tcz /mnt/mmcblk0p2/tce/optional/
 mv /tmp/slimserver.tcz /mnt/mmcblk0p2/tce/optional/
