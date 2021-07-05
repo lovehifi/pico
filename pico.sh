@@ -17,6 +17,8 @@ mv /mnt/mmcblk0p2/tce/optional/pcp-7.0.0-www.tcz /mnt/mmcblk0p2/tce/optional/pcp
 mv /mnt/mmcblk0p2/tce/optional/slimserver.tcz /mnt/mmcblk0p2/tce/optional/slimserver_o.tcz
 tar -zxf MaterialSkin.tar.gz --overwrite -C /
 tar -zxf pcpm.tar.gz --overwrite -C /
+mv /tmp/pcp-7.0.0-www.tcz /mnt/mmcblk0p2/tce/optional/
+mv /tmp/slimserver.tcz /mnt/mmcblk0p2/tce/optional/
 pcp_write_var_to_config USER_COMMAND_3 "/mnt/mmcblk0p2/tce/pcpm.sh"
 #pcp_write_var_to_config USER_COMMAND_2 "aplayer;aprenderer"
 echo "Rebooting..."
