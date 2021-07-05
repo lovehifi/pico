@@ -3,7 +3,7 @@
 . /etc/init.d/tc-functions
 . /var/www/cgi-bin/pcp-functions
 useBusybox
-#TARGET=`cat /etc/sysconfig/backup_device`
+TARGET=`cat /etc/sysconfig/backup_device`
 #cd /mnt/$TARGET
 #echo pcp-aplayer_render.tcz >>onboot.lst
 #cd optional
