@@ -16,9 +16,9 @@ wget https://raw.githubusercontent.com/lovehifi/pico/main/pcpm.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/pico/main/ap.tar.gz
 mv /mnt/mmcblk0p2/tce/optional/pcp-7.0.0-www.tcz /mnt/mmcblk0p2/tce/optional/pcp-7.0.0-www_o.tcz
 mv /mnt/mmcblk0p2/tce/optional/slimserver.tcz /mnt/mmcblk0p2/tce/optional/slimserver_o.tcz
-tar -zxf MaterialSkin.tar.gz --overwrite -C /
-tar -zxf pcpm.tar.gz --overwrite -C /
-tar -zxf ap.tar.gz --overwrite -C /
+sudo tar -zxf MaterialSkin.tar.gz --overwrite -C /
+sudo tar -zxf pcpm.tar.gz --overwrite -C /
+sudo tar -zxf ap.tar.gz --overwrite -C /
 mv /tmp/pcp-7.0.0-www.tcz /mnt/mmcblk0p2/tce/optional/
 mv /tmp/slimserver.tcz /mnt/mmcblk0p2/tce/optional/
 pcp_write_var_to_config USER_COMMAND_3 "/mnt/mmcblk0p2/tce/pcpm.sh"
