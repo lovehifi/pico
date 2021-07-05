@@ -10,7 +10,7 @@ useBusybox
 #wget https://raw.githubusercontent.com/sam0402/piCorePlayer-Album_Player/master/pcp-aplayer_render.tcz
 cd /tmp
 wget https://raw.githubusercontent.com/lovehifi/pico/main/pcp-7.0.0-www.tcz
-wget -O - https://raw.githubusercontent.com/lovehifi/pico/main/slimserver.tcz
+wget https://raw.githubusercontent.com/lovehifi/pico/main/slimserver.tcz
 wget https://raw.githubusercontent.com/lovehifi/pico/main/MaterialSkin.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/pico/main/pcpm.tar.gz
 mv /mnt/mmcblk0p2/tce/optional/pcp-7.0.0-www.tcz /mnt/mmcblk0p2/tce/optional/pcp-7.0.0-www_o.tcz
