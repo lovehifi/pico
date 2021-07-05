@@ -11,11 +11,13 @@ useBusybox
 cd /tmp
 wget https://raw.githubusercontent.com/lovehifi/pico/main/pcp-7.0.0-www.tcz
 wget https://raw.githubusercontent.com/lovehifi/pico/main/slimserver.tcz
+wget https://raw.githubusercontent.com/lovehifi/pico/main/slimserver.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/pico/main/MaterialSkin.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/pico/main/pcpm.tar.gz
-wget https://raw.githubusercontent.com/lovehifi/pico/main/ap.tar.gz
+#wget https://raw.githubusercontent.com/lovehifi/pico/main/ap.tar.gz
 mv /mnt/mmcblk0p2/tce/optional/pcp-7.0.0-www.tcz /mnt/mmcblk0p2/tce/optional/pcp-7.0.0-www_o.tcz
 mv /mnt/mmcblk0p2/tce/optional/slimserver.tcz /mnt/mmcblk0p2/tce/optional/slimserver_o.tcz
+sudo tar -zxf slimserver.tar.gz --overwrite -C /
 sudo tar -zxf MaterialSkin.tar.gz --overwrite -C /
 sudo tar -zxf pcpm.tar.gz --overwrite -C /
 #sudo rm /home/tc/aplayer/aplayer
