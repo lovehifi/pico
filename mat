@@ -22,5 +22,3 @@ tar -xzvf /tmp/mods.tar.gz --overwrite -C /
 tar -xzvf /tmp/style.tar.gz --overwrite -C /
 
 
-# wget https://raw.githubusercontent.com/lovehifi/pico/main/mat | sh
-# wget -O - https://raw.githubusercontent.com/lovehifi/pico/main/mat | sh
