@@ -17,9 +17,10 @@ sudo chown -Rv volumio:volumio /var/lib/squeezeboxserver/cache/InstalledPlugins/
 tar -xzvf /tmp/js.tar.gz --overwrite -C /
 tar -xzvf /tmp/lib-min.tar.gz --overwrite -C /
 tar -xzvf /tmp/mobile.tar.gz --overwrite -C /
+tar -xzvf /tmp/Windows-10-Dark.tar.gz --overwrite -C /
 tar -xzvf /tmp/mods.tar.gz --overwrite -C /
 tar -xzvf /tmp/style.tar.gz --overwrite -C /
-tar -xzvf /tmp/Windows-10-Dark.tar.gz --overwrite -C /
+
 
 # wget https://raw.githubusercontent.com/lovehifi/pico/main/mat | sh
 # wget -O - https://raw.githubusercontent.com/lovehifi/pico/main/mat | sh
