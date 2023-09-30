@@ -7,6 +7,14 @@ if ls /tmp/*tar.gz 1> /dev/null 2>&1; then
     rm -f "$file"
   done
 fi
+
+if ls /tmp/*tgz 1> /dev/null 2>&1; then
+  # Remove each .tgz file
+  for file in /tmp/*tgz; do
+    rm -f "$file"
+  done
+fi
+
 wget https://raw.githubusercontent.com/lovehifi/pico/main/js.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/pico/main/lib-min.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/pico/main/mobile.tar.gz
