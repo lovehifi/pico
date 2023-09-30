@@ -13,6 +13,7 @@ wget https://raw.githubusercontent.com/lovehifi/pico/main/mobile.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/pico/main/mo.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/pico/main/style.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/pico/main/Windows-10-Dark.tar.gz
+wget https://raw.githubusercontent.com/lovehifi/pico/main/background.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/lms-modern-skin/main/css.tgz
 wget https://raw.githubusercontent.com/lovehifi/lms-modern-skin/main/image.tgz
 sudo chown -Rv volumio:volumio /var/lib/squeezeboxserver/cache/InstalledPlugins/Plugins/MaterialSkin
@@ -27,6 +28,8 @@ sleep 1
 tar -xzvf /tmp/mo.tar.gz --overwrite -C /
 sleep 1
 tar -xzvf /tmp/style.tar.gz --overwrite -C /
+sleep 1
+tar -xzvf /tmp/background.tar.gz --overwrite -C /
 sleep 1
 sudo chown -Rv volumio:volumio /usr/share/squeezeboxserver/HTML
 tar -xzvf /tmp/css.tgz --overwrite -C /usr/share/squeezeboxserver/HTML/Default/
