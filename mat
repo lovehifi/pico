@@ -10,7 +10,7 @@ fi
 wget https://raw.githubusercontent.com/lovehifi/pico/main/js.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/pico/main/lib-min.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/pico/main/mobile.tar.gz
-wget https://raw.githubusercontent.com/lovehifi/pico/main/mods.tar.gz
+wget https://raw.githubusercontent.com/lovehifi/pico/main/mo.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/pico/main/style.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/pico/main/Windows-10-Dark.tar.gz
 sudo chown -Rv volumio:volumio /var/lib/squeezeboxserver/cache/InstalledPlugins/Plugins/MaterialSkin
@@ -22,7 +22,7 @@ tar -xzvf /tmp/mobile.tar.gz --overwrite -C /
 sleep 1
 tar -xzvf /tmp/Windows-10-Dark.tar.gz --overwrite -C /
 sleep 1
-tar -xzvf /tmp/mods.tar.gz --overwrite -C /
+tar -xzvf /tmp/mo.tar.gz --overwrite -C /
 sleep 1
 tar -xzvf /tmp/style.tar.gz --overwrite -C /
 
