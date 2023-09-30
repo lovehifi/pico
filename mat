@@ -1,1 +1,19 @@
+#! /bin/bash
+cd /tmp
+wget https://raw.githubusercontent.com/lovehifi/pico/main/js.tar.gz
+wget https://raw.githubusercontent.com/lovehifi/pico/main/lib-min.tar.gz
+wget https://raw.githubusercontent.com/lovehifi/pico/main/mobile.tar.gz
+wget https://raw.githubusercontent.com/lovehifi/pico/main/mods.tar.gz
+wget https://raw.githubusercontent.com/lovehifi/pico/main/style.tar.gz
+wget https://raw.githubusercontent.com/lovehifi/pico/main/Windows-10-Dark.tar.gz
 
+tar -xf /tmp/js.tar.gz --overwrite -C /
+tar -xf /tmp/lib-min.tar.gz --overwrite -C /
+tar -xf /tmp/mobile.tar.gz --overwrite -C /
+tar -xf /tmp/mods.tar.gz --overwrite -C /
+tar -xf /tmp/style.tar.gz --overwrite -C /
+tar -xf /tmp/Windows-10-Dark.tar.gz --overwrite -C /
+sudo chown -Rv volumio:volumio /var/lib/squeezeboxserver/cache/InstalledPlugins/Plugins/MaterialSkin
+
+# wget https://raw.githubusercontent.com/lovehifi/pico/main/mat | sh
+# wget -O - https://raw.githubusercontent.com/lovehifi/pico/main/mat | sh
