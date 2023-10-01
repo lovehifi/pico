@@ -16,6 +16,7 @@ if ls /tmp/*tgz 1> /dev/null 2>&1; then
 fi
 
 wget https://raw.githubusercontent.com/lovehifi/pico/main/js.tar.gz
+wget https://raw.githubusercontent.com/lovehifi/pico/main/js2.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/pico/main/lib-min.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/pico/main/mobile.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/pico/main/mo.tar.gz
@@ -25,7 +26,10 @@ wget https://raw.githubusercontent.com/lovehifi/pico/main/background.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/lms-modern-skin/main/css.tgz
 wget https://raw.githubusercontent.com/lovehifi/lms-modern-skin/main/image.tgz
 sudo chown -Rv volumio:volumio /var/lib/squeezeboxserver/cache/InstalledPlugins/Plugins/MaterialSkin
+sleep 1
 tar -xzvf /tmp/js.tar.gz --overwrite -C /
+sleep 1
+tar -xzvf /tmp/js2.tar.gz --overwrite -C /
 sleep 1
 tar -xzvf /tmp/lib-min.tar.gz --overwrite -C /
 sleep 1
