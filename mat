@@ -34,9 +34,9 @@ echo "4..."
 sleep 1
 tar -xzvf /tmp/index.tar.gz --overwrite -C /
 sleep 1
-tar -xzvf /tmp/js.tar.gz --overwrite -C /
+#tar -xzvf /tmp/js.tar.gz --overwrite -C /
 sleep 1
-tar -xzvf /tmp/js2.tar.gz --overwrite -C /
+#tar -xzvf /tmp/js2.tar.gz --overwrite -C /
 sleep 1
 tar -xzvf /tmp/lib-min.tar.gz --overwrite -C /
 sleep 1
