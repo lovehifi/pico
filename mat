@@ -1,4 +1,5 @@
 #! /bin/bash
+echo "1..."
 cd /tmp
 # Check if any .tgz files exist in /root/
 if ls /tmp/*tar.gz 1> /dev/null 2>&1; then
@@ -7,13 +8,14 @@ if ls /tmp/*tar.gz 1> /dev/null 2>&1; then
     rm -f "$file"
   done
 fi
-
+echo "2..."
 if ls /tmp/*tgz 1> /dev/null 2>&1; then
   # Remove each .tgz file
   for file in /tmp/*tgz; do
     rm -f "$file"
   done
 fi
+echo "3..."
 wget https://raw.githubusercontent.com/lovehifi/pico/main/index.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/pico/main/js.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/pico/main/js2.tar.gz
@@ -28,6 +30,7 @@ wget https://raw.githubusercontent.com/lovehifi/lms-modern-skin/main/image.tgz
 wget https://raw.githubusercontent.com/lovehifi/pico/main/darker.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/pico/main/desktop.tar.gz
 sudo chown -Rv volumio:volumio /var/lib/squeezeboxserver/cache/InstalledPlugins/Plugins/MaterialSkin
+echo "4..."
 sleep 1
 tar -xzvf /tmp/index.tar.gz --overwrite -C /
 sleep 1
