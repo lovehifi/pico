@@ -1,0 +1,3 @@
+
+cd /tmp
+curl -L https://github.com/goodtft/LCD-show/raw/master/usr/qddpi18.dtb -o /boot/overlays/qddpi18.dtb
